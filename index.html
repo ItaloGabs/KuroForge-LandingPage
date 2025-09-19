@@ -152,6 +152,47 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria do Framework</h2>
+                <p>Veja o KuroForge em ação através de capturas de tela e visualizações</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/capture-1.png" alt="Dashboard administrativo do KuroForge" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Área de Login</h3>
+                        <p>Interface moderna e intuitiva para autenticação</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/capture-2.png" alt="Dashboard administrativo do KuroForge" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Dashboard Administrativo</h3>
+                        <p>Interface moderna e intuitiva para gerenciar todo o sistema</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/capture-3.png" alt="Ambiente de desenvolvimento KuroForge" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Gerenciamento de Autenticação</h3>
+                        <p>Autenticação com Google e Github</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/capture-4.png" alt="Arquitetura de plugins do KuroForge" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sistema de Plugins</h3>
+                        <p>Arquitetura modular e extensível para customizações</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Database Support Section -->
     <section class="database-section">
         <div class="container">
@@ -706,6 +747,98 @@ body {
 
 .feature-card p {
     color: hsl(var(--muted-foreground));
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 120px 0;
+    background: hsl(var(--background));
+    position: relative;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    group: hover;
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+    border-color: hsl(var(--primary) / 0.3);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, hsl(var(--background) / 0.95));
+    transform: translateY(100%);
+    transition: var(--transition-smooth);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: hsl(var(--foreground));
+    margin-bottom: 0.5rem;
+}
+
+.gallery-overlay p {
+    color: hsl(var(--muted-foreground));
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+
+    .gallery-overlay {
+        position: static;
+        transform: none;
+        background: hsl(var(--card));
+        border-top: 1px solid hsl(var(--border));
+    }
+
+    .gallery-item:hover .gallery-overlay {
+        transform: none;
+    }
 }
 
 /* Database Section */
