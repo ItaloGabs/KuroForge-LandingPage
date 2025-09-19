@@ -111,7 +111,7 @@
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
+    <section class="features-section" id="features">
         <div class="container">
             <div class="section-header">
                 <h2>Recursos Principais</h2>
@@ -159,39 +159,74 @@
                 <h2>Galeria do Framework</h2>
                 <p>Veja o KuroForge em ação através de capturas de tela e visualizações</p>
             </div>
+
             <div class="gallery-grid">
+            <!-- Adicione data-full se quiser usar uma versão maior diferente do src -->
                 <div class="gallery-item">
-                    <img src="./assets/capture-1.png" alt="Dashboard administrativo do KuroForge" loading="lazy">
+                    <img src="./assets/capture-1.png" alt="Área de Login" loading="lazy" />
                     <div class="gallery-overlay">
                         <h3>Área de Login</h3>
                         <p>Interface moderna e intuitiva para autenticação</p>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="./assets/capture-2.png" alt="Dashboard administrativo do KuroForge" loading="lazy">
+                    <img src="./assets/capture-2.png" alt="Dashboard Administrativo" loading="lazy" />
                     <div class="gallery-overlay">
                         <h3>Dashboard Administrativo</h3>
                         <p>Interface moderna e intuitiva para gerenciar todo o sistema</p>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="./assets/capture-3.png" alt="Ambiente de desenvolvimento KuroForge" loading="lazy">
+                    <img src="./assets/capture-3.png" alt="Gerenciamento de Autenticação" loading="lazy" />
                     <div class="gallery-overlay">
                         <h3>Gerenciamento de Autenticação</h3>
                         <p>Autenticação com Google e Github</p>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="./assets/capture-4.png" alt="Arquitetura de plugins do KuroForge" loading="lazy">
+                    <img src="./assets/capture-4.png" alt="Sistema de Plugins" loading="lazy" />
                     <div class="gallery-overlay">
                         <h3>Sistema de Plugins</h3>
-                        <p>Arquitetura modular e extensível para customizações</p>
+                        <p>Arquitetura modular e extensível</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./assets/capture-5.png" alt="Sistema de Plugins" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Galeria de Media</h3>
+                        <p>Galeria de imagens e videos</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="./assets/capture-6.png" alt="Sistema de Plugins" loading="lazy" />
+                    <div class="gallery-overlay">
+                        <h3>Auditoria de Logs</h3>
+                        <p>Logs de atividades do sistema</p>
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+
+        <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagem anterior">‹</button>
+        <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Próxima imagem">›</button>
+
+        <div class="lightbox-body">
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+            <div class="lightbox-error" id="lightboxError" role="status" aria-live="polite" hidden>Não foi possível carregar a imagem.</div>
+        </div>
+        </div>
 
     <!-- Database Support Section -->
     <section class="database-section">
@@ -262,7 +297,7 @@
                         </ul>
                     </div>
                     <div class="pricing-footer">
-                        <a href="mailto:seu-email-de-contato@exemplo.com" class="btn btn-outline">Solicitar Licença</a>
+                        <a href="https://mpago.li/1v4XEUm" target="_blank" class="btn btn-outline">Solicitar Licença</a>
                     </div>
                 </div>
 
@@ -298,7 +333,7 @@
                         </ul>
                     </div>
                     <div class="pricing-footer">
-                        <a href="mailto:seu-email-de-contato@exemplo.com" class="btn btn-primary">Solicitar Licença</a>
+                        <a href="https://mpago.li/1vpq49j" target="_blank" class="btn btn-primary">Solicitar Licença</a>
                     </div>
                 </div>
             </div>
@@ -308,7 +343,7 @@
                 <p>Para licenças corporativas ou necessidades específicas:</p>
                 <div class="contact-buttons">
                     <a href="mailto:sepherstech@gmail.com" class="btn btn-primary">📧 sepherstech@gmail.com</a>
-                    <a href="#" class="btn btn-outline">💬 Agendar Demonstração</a>
+                    <a href="https://wa.me/5582987117461?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20melhor%20o%20KuroForge%20Premium%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20da%20aplica%C3%A7%C3%A3o.%20%F0%9F%98%83" target="_blank" class="btn btn-outline">💬 Agendar Demonstração</a>
                 </div>
             </div>
         </div>
@@ -387,17 +422,17 @@
                     <ul>
                         <li><a href="#">Documentação</a></li>
                         <li><a href="#">Comunidade</a></li>
-                        <li><a href="mailto:seu-email-de-contato@exemplo.com">Contato</a></li>
+                        <li><a href="mailto:sepherstech@gmail.com">Contato</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <!-- <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="#">Termos de Uso</a></li>
                         <li><a href="#">Política de Privacidade</a></li>
                         <li><a href="#">Licenças</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 KuroForge. Todos os direitos reservados.</p>
@@ -405,6 +440,127 @@
         </div>
     </footer>
 </body>
+<script>
+(() => {
+  // elementos
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxError = document.getElementById('lightboxError');
+  const btnClose = document.getElementById('lightboxClose');
+  const btnNext = document.getElementById('lightboxNext');
+  const btnPrev = document.getElementById('lightboxPrev');
+
+  // NodeList de imagens da galeria
+  const galleryImgs = Array.from(document.querySelectorAll('.gallery-item img'));
+  let currentIndex = -1;
+
+
+  const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+
+    galleryItems.forEach((item, idx) => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        openLightbox(idx);
+    });
+    });
+
+  // abre lightbox com preload -- evita mostrar imagem quebrada
+  function openLightbox(index) {
+    // segurança
+    if (index < 0 || index >= galleryImgs.length) return;
+
+    const thumb = galleryImgs[index];
+    const src = thumb.dataset.full || thumb.src; // se tiver data-full use
+    const caption = thumb.alt || (thumb.closest('.gallery-item')?.querySelector('.gallery-overlay h3')?.textContent) || '';
+
+    // reset visual antes do preload
+    lightboxImage.src = '';
+    lightboxCaption.textContent = '';
+    lightboxError.hidden = true;
+
+    // Preload em background
+    const pre = new Image();
+    // opcional: definir crossOrigin se necessário
+    pre.onload = () => {
+      // só mostra quando estiver carregada
+      lightboxImage.src = src;
+      lightboxImage.alt = thumb.alt || '';
+      lightboxCaption.textContent = caption;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      currentIndex = index;
+    };
+    pre.onerror = () => {
+      // se falhar, mostrar mensagem e NÃO abrir lightbox vazio
+      lightboxError.hidden = false;
+      lightboxError.textContent = 'Não foi possível carregar a imagem.';
+      // opcional: abrir lightbox com fallback visual — aqui optamos por abrir um modal com mensagem
+      lightboxImage.src = '';
+      lightboxCaption.textContent = '';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+    };
+
+    pre.src = src;
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = ''; // remove src para evitar requests pendentes/placeholder
+    lightboxCaption.textContent = '';
+    lightboxError.hidden = true;
+    currentIndex = -1;
+  }
+
+  function showNext() {
+    if (galleryImgs.length === 0) return;
+    const next = (currentIndex + 1) % galleryImgs.length;
+    openLightbox(next);
+  }
+  function showPrev() {
+    if (galleryImgs.length === 0) return;
+    const prev = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+    openLightbox(prev);
+  }
+
+  // delega cliques nas thumbs
+  galleryImgs.forEach((img, idx) => {
+    img.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLightbox(idx);
+    });
+  });
+
+  // botões
+  btnClose.addEventListener('click', closeLightbox);
+  btnNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+  btnPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+
+  // fecha clicando no overlay (fora da imagem)
+  lightbox.addEventListener('click', (e) => {
+    // se clicar exatamente no background (o próprio lightbox), fecha
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // keyboard support
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+  });
+
+  // prevenção: se alguma imagem de gallery estiver com src vazio ou inválido, não abrir automaticamente
+  // (fix adicional caso algum script tente abrir) -> apenas garante estado limpo ao carregar a página
+  window.addEventListener('load', () => {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lightboxImage.src = '';
+  });
+})();
+</script>
 <style>
     /* CSS Variables - Design System */
 :root {
@@ -817,6 +973,102 @@ body {
     color: hsl(var(--muted-foreground));
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+/* Lightbox (imagem ampliada) */
+.lightbox {
+  display: none; /* fechado por padrão */
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Somente when open */
+.lightbox.open {
+  display: flex;
+}
+
+/* corpo central */
+.lightbox-body {
+  max-width: 95%;
+  max-height: 90vh;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+/* imagem */
+.lightbox-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  user-select: none;
+}
+
+/* legenda */
+.lightbox-caption {
+  color: #fff;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* erro (escondido por padrão) */
+.lightbox-error {
+  color: #fff;
+  background: rgba(255,0,0,0.08);
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  font-size: .95rem;
+}
+
+/* fechar */
+.lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 28px;
+  font-size: 2rem;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+/* navegação */
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  border: none;
+  width: 52px;
+  height: 72px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.lightbox-prev { left: 18px; }
+.lightbox-next { right: 18px; }
+
+/* responsivo */
+@media (max-width: 768px) {
+  .lightbox-nav { display: none; } /* em mobile manter tap-to-swipe (ou manter se preferir) */
+  .lightbox-image { max-height: 70vh; }
 }
 
 @media (max-width: 768px) {
