@@ -13,6 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <img src="https://flagcdn.com/w20/br.png" alt="Português" id="lang-pt">
+        <img src="https://flagcdn.com/w20/us.png" alt="English" id="lang-en">
+    </div>
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-background"></div>
@@ -21,14 +27,14 @@
             <div class="container">
                 <img src="../assets/kuro_logo.png" alt="KuroForge Logo" class="hero-logo">
                 <h1 class="hero-title">KuroForge</h1>
-                <p class="hero-subtitle">Um Framework de Aplicação Web Altamente Extensível e Configurável</p>
-                <p class="hero-description">
+                <p class="hero-subtitle" data-translate="hero_subtitle">Um Framework de Aplicação Web Altamente Extensível e Configurável</p>
+                <p class="hero-description" data-translate="hero_description">
                     Plataforma robusta e flexível para CMS ou painéis de administração.
                     Arquitetura baseada em plugins permite extensões limpas e desacopladas.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary">Solicitar Licença Comercial</a>
-                    <a href="#installation" class="btn btn-outline">Instalação</a>
+                    <a href="#pricing" class="btn btn-primary" data-translate="license_button">Solicitar Licença Comercial</a>
+                    <a href="#installation" class="btn btn-outline" data-translate="install_button">Instalação</a>
                 </div>
             </div>
 
@@ -54,8 +60,8 @@
     <section class="tech-stack-section">
         <div class="container">
             <div class="section-header">
-                <h2>Tecnologias Principais</h2>
-                <p>Construído com as melhores tecnologias do mercado para garantir performance e escalabilidade</p>
+                <h2 data-translate="tech_title">Tecnologias Principais</h2>
+                <p data-translate="tech_subtitle">Construído com as melhores tecnologias do mercado para garantir performance e escalabilidade</p>
             </div>
             <div class="tech-grid">
                 <div class="tech-card">
@@ -63,7 +69,7 @@
                     <div class="tech-content">
                         <h3>NestJS</h3>
                         <span class="tech-category">Backend</span>
-                        <p>Framework Node.js progressivo</p>
+                        <p data-translate="tech_nestjs_desc">Framework Node.js progressivo</p>
                     </div>
                 </div>
                 <div class="tech-card">
@@ -71,7 +77,7 @@
                     <div class="tech-content">
                         <h3>Vue.js 3</h3>
                         <span class="tech-category">Frontend</span>
-                        <p>Framework JavaScript moderno</p>
+                        <p data-translate="tech_vue_desc">Framework JavaScript moderno</p>
                     </div>
                 </div>
                 <div class="tech-card">
@@ -79,7 +85,7 @@
                     <div class="tech-content">
                         <h3>TypeScript</h3>
                         <span class="tech-category">Language</span>
-                        <p>JavaScript tipado</p>
+                        <p data-translate="tech_ts_desc">JavaScript tipado</p>
                     </div>
                 </div>
                 <div class="tech-card">
@@ -87,7 +93,7 @@
                     <div class="tech-content">
                         <h3>TypeORM</h3>
                         <span class="tech-category">Database</span>
-                        <p>ORM para TypeScript</p>
+                        <p data-translate="tech_typeorm_desc">ORM para TypeScript</p>
                     </div>
                 </div>
                 <div class="tech-card">
@@ -95,7 +101,7 @@
                     <div class="tech-content">
                         <h3>Docker</h3>
                         <span class="tech-category">DevOps</span>
-                        <p>Containerização</p>
+                        <p data-translate="tech_docker_desc">Containerização</p>
                     </div>
                 </div>
                 <div class="tech-card">
@@ -103,7 +109,7 @@
                     <div class="tech-content">
                         <h3>Vite</h3>
                         <span class="tech-category">Tooling</span>
-                        <p>Build tool moderna</p>
+                        <p data-translate="tech_vite_desc">Build tool moderna</p>
                     </div>
                 </div>
             </div>
@@ -114,39 +120,39 @@
     <section class="features-section" id="features">
         <div class="container">
             <div class="section-header">
-                <h2>Recursos Principais</h2>
-                <p>Funcionalidades poderosas para acelerar o desenvolvimento de aplicações web</p>
+                <h2 data-translate="features_title">Recursos Principais</h2>
+                <p data-translate="features_subtitle">Funcionalidades poderosas para acelerar o desenvolvimento de aplicações web</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">🔌</div>
-                    <h3>Arquitetura de Plugins</h3>
-                    <p>Sistema modular que permite extensões fáceis e organizadas sem modificar o código principal.</p>
+                    <h3 data-translate="plugin_architecture_title">Arquitetura de Plugins</h3>
+                    <p data-translate="plugin_architecture_desc">Sistema modular que permite extensões fáceis e organizadas sem modificar o código principal.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">⚙️</div>
-                    <h3>Altamente Configurável</h3>
-                    <p>Configure cada aspecto do framework através de arquivos de configuração flexíveis.</p>
+                    <h3 data-translate="configurable_title">Altamente Configurável</h3>
+                    <p data-translate="configurable_desc">Configure cada aspecto do framework através de arquivos de configuração flexíveis.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🎨</div>
-                    <h3>Interface Moderna</h3>
-                    <p>UI responsiva e intuitiva construída com Vue.js 3 e design system personalizado.</p>
+                    <h3 data-translate="modern_interface_title">Interface Moderna</h3>
+                    <p data-translate="modern_interface_desc">UI responsiva e intuitiva construída com Vue.js 3 e design system personalizado.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔐</div>
-                    <h3>Segurança Robusta</h3>
-                    <p>Autenticação, autorização e proteção contra vulnerabilidades integradas por padrão.</p>
+                    <h3 data-translate="security_title">Segurança Robusta</h3>
+                    <p data-translate="security_desc">Autenticação, autorização e proteção contra vulnerabilidades integradas por padrão.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>Painel Administrativo</h3>
-                    <p>Interface completa para gerenciamento de conteúdo, usuários e configurações do sistema.</p>
+                    <h3 data-translate="admin_panel_title">Painel Administrativo</h3>
+                    <p data-translate="admin_panel_desc">Interface completa para gerenciamento de conteúdo, usuários e configurações do sistema.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🚀</div>
-                    <h3>Performance Otimizada</h3>
-                    <p>Construído com foco em velocidade, escalabilidade e eficiência de recursos.</p>
+                    <h3 data-translate="performance_title">Performance Otimizada</h3>
+                    <p data-translate="performance_desc">Construído com foco em velocidade, escalabilidade e eficiência de recursos.</p>
                 </div>
             </div>
         </div>
@@ -156,57 +162,56 @@
     <section class="gallery-section">
         <div class="container">
             <div class="section-header">
-                <h2>Galeria do Framework</h2>
-                <p>Veja o KuroForge em ação através de capturas de tela e visualizações</p>
+                <h2 data-translate="gallery_title">Galeria do Framework</h2>
+                <p data-translate="gallery_subtitle">Veja o KuroForge em ação através de capturas de tela e visualizações</p>
             </div>
 
             <div class="gallery-grid">
-            <!-- Adicione data-full se quiser usar uma versão maior diferente do src -->
                 <div class="gallery-item">
                     <img src="./assets/capture-1.png" alt="Área de Login" loading="lazy" />
                     <div class="gallery-overlay">
-                        <h3>Área de Login</h3>
-                        <p>Interface moderna e intuitiva para autenticação</p>
+                        <h3 data-translate="gallery_login_title">Área de Login</h3>
+                        <p data-translate="gallery_login_desc">Interface moderna e intuitiva para autenticação</p>
                     </div>
                 </div>
 
                 <div class="gallery-item">
                     <img src="./assets/capture-2.png" alt="Dashboard Administrativo" loading="lazy" />
                     <div class="gallery-overlay">
-                        <h3>Dashboard Administrativo</h3>
-                        <p>Interface moderna e intuitiva para gerenciar todo o sistema</p>
+                        <h3 data-translate="gallery_dashboard_title">Dashboard Administrativo</h3>
+                        <p data-translate="gallery_dashboard_desc">Interface moderna e intuitiva para gerenciar todo o sistema</p>
                     </div>
                 </div>
 
                 <div class="gallery-item">
                     <img src="./assets/capture-3.png" alt="Gerenciamento de Autenticação" loading="lazy" />
                     <div class="gallery-overlay">
-                        <h3>Gerenciamento de Autenticação</h3>
-                        <p>Autenticação com Google e Github</p>
+                        <h3 data-translate="gallery_auth_title">Gerenciamento de Autenticação</h3>
+                        <p data-translate="gallery_auth_desc">Autenticação com Google e Github</p>
                     </div>
                 </div>
 
                 <div class="gallery-item">
                     <img src="./assets/capture-4.png" alt="Sistema de Plugins" loading="lazy" />
                     <div class="gallery-overlay">
-                        <h3>Sistema de Plugins</h3>
-                        <p>Arquitetura modular e extensível</p>
+                        <h3 data-translate="gallery_plugins_title">Sistema de Plugins</h3>
+                        <p data-translate="gallery_plugins_desc">Arquitetura modular e extensível</p>
                     </div>
                 </div>
 
                 <div class="gallery-item">
                     <img src="./assets/capture-5.png" alt="Sistema de Plugins" loading="lazy" />
                     <div class="gallery-overlay">
-                        <h3>Galeria de Media</h3>
-                        <p>Galeria de imagens e videos</p>
+                        <h3 data-translate="gallery_media_title">Galeria de Media</h3>
+                        <p data-translate="gallery_media_desc">Galeria de imagens e videos</p>
                     </div>
                 </div>
 
                 <div class="gallery-item">
                     <img src="./assets/capture-6.png" alt="Sistema de Plugins" loading="lazy" />
                     <div class="gallery-overlay">
-                        <h3>Auditoria de Logs</h3>
-                        <p>Logs de atividades do sistema</p>
+                        <h3 data-translate="gallery_logs_title">Auditoria de Logs</h3>
+                        <p data-translate="gallery_logs_desc">Logs de atividades do sistema</p>
                     </div>
                 </div>
 
@@ -232,24 +237,24 @@
     <section class="database-section">
         <div class="container">
             <div class="section-header">
-                <h2>Suporte a Múltiplos Bancos</h2>
-                <p>Flexibilidade total na escolha da tecnologia de banco de dados</p>
+                <h2 data-translate="db_title">Suporte a Múltiplos Bancos</h2>
+                <p data-translate="db_subtitle">Flexibilidade total na escolha da tecnologia de banco de dados</p>
             </div>
             <div class="database-grid">
                 <div class="database-card">
                     <div class="database-icon">🐬</div>
                     <h3>MySQL</h3>
-                    <p>Banco relacional mais popular do mundo, com excelente performance e confiabilidade.</p>
+                    <p data-translate="db_mysql_desc">Banco relacional mais popular do mundo, com excelente performance e confiabilidade.</p>
                 </div>
                 <div class="database-card">
                     <div class="database-icon">🐘</div>
                     <h3>PostgreSQL</h3>
-                    <p>Banco de dados objeto-relacional avançado com recursos sofisticados e padrões SQL completos.</p>
+                    <p data-translate="db_postgres_desc">Banco de dados objeto-relacional avançado com recursos sofisticados e padrões SQL completos.</p>
                 </div>
                 <div class="database-card">
                     <div class="database-icon">🏢</div>
                     <h3>Microsoft SQL Server</h3>
-                    <p>Solução enterprise robusta com integração nativa ao ecossistema Microsoft.</p>
+                    <p data-translate="db_sqlserver_desc">Solução enterprise robusta com integração nativa ao ecossistema Microsoft.</p>
                 </div>
             </div>
         </div>
@@ -259,91 +264,91 @@
     <section class="pricing-section" id="pricing">
         <div class="container">
             <div class="section-header">
-                <h2>Planos e Licenciamento</h2>
-                <p>Escolha o plano ideal para suas necessidades</p>
+                <h2 data-translate="pricing_title">Planos e Licenciamento</h2>
+                <p data-translate="pricing_subtitle">Escolha o plano ideal para suas necessidades</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <div class="pricing-badge">📦 Padrão</div>
-                        <h3>Licença Standard</h3>
+                        <div class="pricing-badge" data-translate="price_standard_badge">📦 Padrão</div>
+                        <h3 data-translate="price_standard_title">Licença Standard</h3>
                         <div class="pricing-price">
                             <span class="currency">R$</span>
                             <span class="amount">299</span>
-                            <span class="period">/ licença</span>
+                            <span class="period" data-translate="price_standard_period">/ licença</span>
                         </div>
                     </div>
                     <div class="pricing-content">
-                        <h4>✅ Incluso:</h4>
+                        <h4 data-translate="price_included">✅ Incluso:</h4>
                         <ul class="pricing-features">
-                            <li>▶ Uso comercial limitado</li>
-                            <li>▶ Binários compilados</li>
-                            <li>▶ Suporte por email</li>
-                            <li>▶ Atualizações por 6 meses</li>
-                            <li>▶ Documentação completa</li>
+                            <li data-translate="price_standard_feature1">▶ Uso comercial limitado</li>
+                            <li data-translate="price_standard_feature2">▶ Binários compilados</li>
+                            <li data-translate="price_standard_feature3">▶ Suporte por email</li>
+                            <li data-translate="price_standard_feature4">▶ Atualizações por 6 meses</li>
+                            <li data-translate="price_standard_feature5">▶ Documentação completa</li>
                         </ul>
 
-                        <h4>🚫 Não incluso:</h4>
+                        <h4 data-translate="price_not_included">🚫 Não incluso:</h4>
                         <ul class="pricing-restrictions">
-                            <li>▶ Modificações no core</li>
-                            <li>▶ Suporte prioritário</li>
+                            <li data-translate="price_standard_restriction1">▶ Modificações no core</li>
+                            <li data-translate="price_standard_restriction2">▶ Suporte prioritário</li>
                         </ul>
 
-                        <h4>🎯 Ideal para:</h4>
+                        <h4 data-translate="price_ideal_for">🎯 Ideal para:</h4>
                         <ul class="pricing-ideal">
-                            <li>▶ Pequenas empresas</li>
-                            <li>▶ Projetos simples</li>
-                            <li>▶ Prototipagem rápida</li>
+                            <li data-translate="price_standard_ideal1">▶ Pequenas empresas</li>
+                            <li data-translate="price_standard_ideal2">▶ Projetos simples</li>
+                            <li data-translate="price_standard_ideal3">▶ Prototipagem rápida</li>
                         </ul>
                     </div>
                     <div class="pricing-footer">
-                        <a href="https://mpago.li/1v4XEUm" target="_blank" class="btn btn-outline">Solicitar Licença</a>
+                        <a href="https://mpago.li/1v4XEUm" target="_blank" class="btn btn-outline" data-translate="price_standard_button">Solicitar Licença</a>
                     </div>
                 </div>
 
                 <div class="pricing-card pricing-card-featured">
-                    <div class="pricing-ribbon">Mais Popular</div>
+                    <div class="pricing-ribbon" data-translate="price_premium_ribbon">Mais Popular</div>
                     <div class="pricing-header">
-                        <div class="pricing-badge">👑 Premium</div>
-                        <h3>Licença Premium</h3>
+                        <div class="pricing-badge" data-translate="price_premium_badge">👑 Premium</div>
+                        <h3 data-translate="price_premium_title">Licença Premium</h3>
                         <div class="pricing-price">
                             <span class="currency">R$</span>
                             <span class="amount">599</span>
-                            <span class="period">/ licença</span>
+                            <span class="period" data-translate="price_premium_period">/ licença</span>
                         </div>
                     </div>
                     <div class="pricing-content">
-                        <h4>✅ Incluso:</h4>
+                        <h4 data-translate="price_included">✅ Incluso:</h4>
                         <ul class="pricing-features">
-                            <li>▶ Uso comercial irrestrito</li>
-                            <li>▶ Código-fonte completo</li>
-                            <li>▶ Modificações permitidas</li>
-                            <li>▶ Suporte prioritário</li>
-                            <li>▶ Atualizações por 1 ano</li>
-                            <li>▶ Consultoria técnica</li>
-                            <li>▶ Customizações sob demanda</li>
+                            <li data-translate="price_premium_feature1">▶ Uso comercial irrestrito</li>
+                            <li data-translate="price_premium_feature2">▶ Código-fonte completo</li>
+                            <li data-translate="price_premium_feature3">▶ Modificações permitidas</li>
+                            <li data-translate="price_premium_feature4">▶ Suporte prioritário</li>
+                            <li data-translate="price_premium_feature5">▶ Atualizações por 1 ano</li>
+                            <li data-translate="price_premium_feature6">▶ Consultoria técnica</li>
+                            <li data-translate="price_premium_feature7">▶ Customizações sob demanda</li>
                         </ul>
 
-                        <h4>🎯 Ideal para:</h4>
+                        <h4 data-translate="price_ideal_for">🎯 Ideal para:</h4>
                         <ul class="pricing-ideal">
-                            <li>▶ Empresas médias/grandes</li>
-                            <li>▶ Agências de desenvolvimento</li>
-                            <li>▶ Produtos SaaS</li>
-                            <li>▶ Projetos enterprise</li>
+                            <li data-translate="price_premium_ideal1">▶ Empresas médias/grandes</li>
+                            <li data-translate="price_premium_ideal2">▶ Agências de desenvolvimento</li>
+                            <li data-translate="price_premium_ideal3">▶ Produtos SaaS</li>
+                            <li data-translate="price_premium_ideal4">▶ Projetos enterprise</li>
                         </ul>
                     </div>
                     <div class="pricing-footer">
-                        <a href="https://mpago.li/1vpq49j" target="_blank" class="btn btn-primary">Solicitar Licença</a>
+                        <a href="https://mpago.li/1vpq49j" target="_blank" class="btn btn-primary" data-translate="price_premium_button">Solicitar Licença</a>
                     </div>
                 </div>
             </div>
 
             <div class="pricing-contact">
-                <h3>Entre em Contato</h3>
-                <p>Para licenças corporativas ou necessidades específicas:</p>
+                <h3 data-translate="contact_title">Entre em Contato</h3>
+                <p data-translate="contact_subtitle">Para licenças corporativas ou necessidades específicas:</p>
                 <div class="contact-buttons">
                     <a href="mailto:sepherstech@gmail.com" class="btn btn-primary">📧 sepherstech@gmail.com</a>
-                    <a href="https://wa.me/5582987117461?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20melhor%20o%20KuroForge%20Premium%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20da%20aplica%C3%A7%C3%A3o.%20%F0%9F%98%83" target="_blank" class="btn btn-outline">💬 Agendar Demonstração</a>
+                    <a href="https://wa.me/5582987117461?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20melhor%20o%20KuroForge%20Premium%20e%20gostaria%20de%20solicitar%20uma%20demonstra%C3%A7%C3%A3o%20da%20aplica%C3%A7%C3%A3o.%20%F0%9F%98%83" target="_blank" class="btn btn-outline" data-translate="schedule_demo_button">💬 Agendar Demonstração</a>
                 </div>
             </div>
         </div>
@@ -353,12 +358,12 @@
     <section class="installation-section" id="installation">
         <div class="container">
             <div class="section-header">
-                <h2>Instalação</h2>
-                <p>Configure seu ambiente de desenvolvimento em minutos</p>
+                <h2 data-translate="installation_title">Instalação</h2>
+                <p data-translate="installation_subtitle">Configure seu ambiente de desenvolvimento em minutos</p>
             </div>
             <div class="installation-content">
                 <div class="installation-card">
-                    <h3>Pré-requisitos</h3>
+                    <h3 data-translate="prerequisites_title">Pré-requisitos</h3>
                     <ul>
                         <li>Docker (versão 20.10+)</li>
                         <li>Node.js (versão 18+)</li>
@@ -370,9 +375,9 @@
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h4>Baixar o Framework</h4>
+                            <h4 data-translate="install_step1_title">Baixar o Framework</h4>
                             <div class="code-block">
-                                <code>Codigo fonte disponibilizado ao cliente</code>
+                                <code data-translate="install_step1_desc">Codigo fonte disponibilizado ao cliente</code>
                             </div>
                         </div>
                     </div>
@@ -380,7 +385,7 @@
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h4>Executar o Instalador</h4>
+                            <h4 data-translate="install_step2_title">Executar o Instalador</h4>
                             <div class="code-block">
                                 <code>./install.sh</code>
                             </div>
@@ -390,7 +395,7 @@
                     <div class="step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h4>Iniciar o Ambiente</h4>
+                            <h4 data-translate="install_step3_title">Iniciar o Ambiente</h4>
                             <div class="code-block">
                                 <code>docker-compose up -d</code>
                             </div>
@@ -407,38 +412,31 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>KuroForge</h3>
-                    <p>Framework de aplicação web extensível e configurável para desenvolvimento moderno.</p>
+                    <p data-translate="footer_description">Framework de aplicação web extensível e configurável para desenvolvimento moderno.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Produto</h4>
+                    <h4 data-translate="footer_product">Produto</h4>
                     <ul>
-                        <li><a href="#features">Recursos</a></li>
-                        <li><a href="#pricing">Preços</a></li>
-                        <li><a href="#installation">Instalação</a></li>
+                        <li><a href="#features" data-translate="footer_features">Recursos</a></li>
+                        <li><a href="#pricing" data-translate="footer_pricing">Preços</a></li>
+                        <li><a href="#installation" data-translate="footer_installation">Instalação</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Suporte</h4>
+                    <h4 data-translate="footer_support">Suporte</h4>
                     <ul>
-                        <li><a href="#">Documentação</a></li>
-                        <li><a href="#">Comunidade</a></li>
-                        <li><a href="mailto:sepherstech@gmail.com">Contato</a></li>
+                        <li><a href="#" data-translate="footer_documentation">Documentação</a></li>
+                        <li><a href="#" data-translate="footer_community">Comunidade</a></li>
+                        <li><a href="mailto:sepherstech@gmail.com" data-translate="footer_contact">Contato</a></li>
                     </ul>
                 </div>
-                <!-- <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Licenças</a></li>
-                    </ul>
-                </div> -->
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 KuroForge. Todos os direitos reservados.</p>
+                <p data-translate="footer_copyright">&copy; 2024 KuroForge. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
+    <script src="assets/scripts.js"></script>
 </body>
 <script>
 (() => {
@@ -471,7 +469,7 @@
     if (index < 0 || index >= galleryImgs.length) return;
 
     const thumb = galleryImgs[index];
-    const src = thumb.dataset.full || thumb.src; // se tiver data-full use
+    const src = thumb.dataset.full || thumb.src;
     const caption = thumb.alt || (thumb.closest('.gallery-item')?.querySelector('.gallery-overlay h3')?.textContent) || '';
 
     // reset visual antes do preload
@@ -481,9 +479,7 @@
 
     // Preload em background
     const pre = new Image();
-    // opcional: definir crossOrigin se necessário
     pre.onload = () => {
-      // só mostra quando estiver carregada
       lightboxImage.src = src;
       lightboxImage.alt = thumb.alt || '';
       lightboxCaption.textContent = caption;
@@ -492,10 +488,8 @@
       currentIndex = index;
     };
     pre.onerror = () => {
-      // se falhar, mostrar mensagem e NÃO abrir lightbox vazio
       lightboxError.hidden = false;
       lightboxError.textContent = 'Não foi possível carregar a imagem.';
-      // opcional: abrir lightbox com fallback visual — aqui optamos por abrir um modal com mensagem
       lightboxImage.src = '';
       lightboxCaption.textContent = '';
       lightbox.classList.add('open');
@@ -508,7 +502,7 @@
   function closeLightbox() {
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
-    lightboxImage.src = ''; // remove src para evitar requests pendentes/placeholder
+    lightboxImage.src = '';
     lightboxCaption.textContent = '';
     lightboxError.hidden = true;
     currentIndex = -1;
@@ -525,7 +519,6 @@
     openLightbox(prev);
   }
 
-  // delega cliques nas thumbs
   galleryImgs.forEach((img, idx) => {
     img.addEventListener('click', (e) => {
       e.preventDefault();
@@ -533,18 +526,14 @@
     });
   });
 
-  // botões
   btnClose.addEventListener('click', closeLightbox);
   btnNext.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
   btnPrev.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
 
-  // fecha clicando no overlay (fora da imagem)
   lightbox.addEventListener('click', (e) => {
-    // se clicar exatamente no background (o próprio lightbox), fecha
     if (e.target === lightbox) closeLightbox();
   });
 
-  // keyboard support
   document.addEventListener('keydown', (e) => {
     if (!lightbox.classList.contains('open')) return;
     if (e.key === 'Escape') closeLightbox();
@@ -552,8 +541,6 @@
     if (e.key === 'ArrowLeft') showPrev();
   });
 
-  // prevenção: se alguma imagem de gallery estiver com src vazio ou inválido, não abrir automaticamente
-  // (fix adicional caso algum script tente abrir) -> apenas garante estado limpo ao carregar a página
   window.addEventListener('load', () => {
     lightbox.classList.remove('open');
     lightbox.setAttribute('aria-hidden', 'true');
@@ -562,9 +549,25 @@
 })();
 </script>
 <style>
-    /* CSS Variables - Design System */
+    .language-switcher {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .language-switcher img {
+        cursor: pointer;
+        border-radius: 50%;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .language-switcher img:hover {
+        transform: scale(1.1);
+    }
 :root {
-    /* Core Colors (HSL) */
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;
@@ -573,24 +576,19 @@
     --muted-foreground: 240 5% 64.9%;
     --border: 240 6% 20%;
 
-    /* Brand Colors */
     --brand-primary: 246 83% 57%;
     --brand-secondary: 268 83% 57%;
     --brand-accent: 190 100% 42%;
 
-    /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand-primary)), hsl(var(--brand-secondary)));
     --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(var(--muted)));
 
-    /* Shadows */
     --shadow-glow: 0 0 40px hsl(var(--brand-primary) / 0.3);
     --shadow-card: 0 8px 32px hsl(var(--background) / 0.5);
 
-    /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -608,14 +606,12 @@ body {
     line-height: 1.6;
 }
 
-/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
 }
 
-/* Section Headers */
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -635,7 +631,6 @@ body {
     margin: 0 auto;
 }
 
-/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -671,7 +666,6 @@ body {
     background: hsl(var(--brand-primary) / 0.1);
 }
 
-/* Cards */
 .card {
     background: var(--gradient-card);
     border: 1px solid hsl(var(--border));
@@ -685,7 +679,6 @@ body {
     box-shadow: var(--shadow-card);
 }
 
-/* Hero Section */
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -755,7 +748,6 @@ body {
     justify-content: center;
 }
 
-/* Floating Cards */
 .floating-card {
     position: absolute;
     background: var(--gradient-card);
@@ -801,7 +793,6 @@ body {
     }
 }
 
-/* Tech Stack Section */
 .tech-stack-section {
     padding: 5rem 0;
     background: hsl(var(--muted) / 0.3);
@@ -863,7 +854,6 @@ body {
     color: hsl(var(--muted-foreground));
 }
 
-/* Features Section */
 .features-section {
     padding: 5rem 0;
 }
@@ -905,7 +895,6 @@ body {
     color: hsl(var(--muted-foreground));
 }
 
-/* Gallery Section */
 .gallery-section {
     padding: 120px 0;
     background: hsl(var(--background));
@@ -975,9 +964,8 @@ body {
     line-height: 1.5;
 }
 
-/* Lightbox (imagem ampliada) */
 .lightbox {
-  display: none; /* fechado por padrão */
+  display: none;
   position: fixed;
   z-index: 9999;
   inset: 0;
@@ -987,12 +975,10 @@ body {
   padding: 2rem;
 }
 
-/* Somente when open */
 .lightbox.open {
   display: flex;
 }
 
-/* corpo central */
 .lightbox-body {
   max-width: 95%;
   max-height: 90vh;
@@ -1004,7 +990,6 @@ body {
   position: relative;
 }
 
-/* imagem */
 .lightbox-image {
   max-width: 100%;
   max-height: 80vh;
@@ -1014,14 +999,12 @@ body {
   user-select: none;
 }
 
-/* legenda */
 .lightbox-caption {
   color: #fff;
   font-size: 0.95rem;
   text-align: center;
 }
 
-/* erro (escondido por padrão) */
 .lightbox-error {
   color: #fff;
   background: rgba(255,0,0,0.08);
@@ -1030,7 +1013,6 @@ body {
   font-size: .95rem;
 }
 
-/* fechar */
 .lightbox-close {
   position: absolute;
   top: 18px;
@@ -1043,7 +1025,6 @@ body {
   z-index: 10000;
 }
 
-/* navegação */
 .lightbox-nav {
   position: absolute;
   top: 50%;
@@ -1065,9 +1046,8 @@ body {
 .lightbox-prev { left: 18px; }
 .lightbox-next { right: 18px; }
 
-/* responsivo */
 @media (max-width: 768px) {
-  .lightbox-nav { display: none; } /* em mobile manter tap-to-swipe (ou manter se preferir) */
+  .lightbox-nav { display: none; }
   .lightbox-image { max-height: 70vh; }
 }
 
@@ -1093,7 +1073,6 @@ body {
     }
 }
 
-/* Database Section */
 .database-section {
     padding: 5rem 0;
     background: hsl(var(--muted) / 0.3);
@@ -1135,7 +1114,6 @@ body {
     color: hsl(var(--muted-foreground));
 }
 
-/* Pricing Section */
 .pricing-section {
     padding: 5rem 0;
 }
@@ -1294,7 +1272,6 @@ body {
     justify-content: center;
 }
 
-/* Installation Section */
 .installation-section {
     padding: 5rem 0;
     background: hsl(var(--muted) / 0.3);
@@ -1384,7 +1361,6 @@ body {
     font-size: 0.875rem;
 }
 
-/* Footer */
 .footer {
     padding: 3rem 0 1rem;
     background: hsl(var(--background));
@@ -1438,7 +1414,6 @@ body {
     color: hsl(var(--muted-foreground));
 }
 
-/* Animations */
 @keyframes float {
     0%, 100% {
         transform: translateY(0px);
@@ -1457,7 +1432,6 @@ body {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
